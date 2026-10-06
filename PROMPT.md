@@ -40,4 +40,29 @@ Rules:
 9. `onEvict` must be called AFTER the operation has completed and the internal
    lock has been released, so the callback may safely call back into the cache.
 
-Return only the complete contents of `cache.go`.
+## Execution and submission
+
+Implement the specification by editing cache.go in the current workspace.
+The file on disk is the submission, not your final message.
+
+Preserve the package name, exported API signatures, and EvictReason values.
+Use only the Go standard library.
+Do not modify any other supplied file or add additional submission files.
+
+You may inspect the supplied files and run local Go tools.
+Local testing and revision are allowed within this attempt.
+
+Do not retrieve previous attempts, saved conversations, repository history,
+or external solutions. Do not launch additional agents or model clients.
+
+Before finishing, format cache.go with gofmt and run:
+go test -race -count=1 ./...
+
+Do not change tests, skip tests, or modify the build/test environment to
+influence the result. Implement the specified behavior generally, not only
+the particular examples in the visible tests.
+
+Only cache.go will be copied into a separate clean grading environment.
+
+Finish with a brief status message. Do not repeat the source code in your
+final response.
