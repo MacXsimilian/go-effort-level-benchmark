@@ -1,4 +1,4 @@
-# Task prompt (give this exact text to every model / effort level)
+# Task prompt
 
 Implement the Go package in `cache.go` so that every test in `cache_test.go`
 passes with `go test -race -count=1 ./...`. Do not edit `cache_test.go`.
